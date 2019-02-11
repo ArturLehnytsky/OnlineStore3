@@ -10,10 +10,9 @@ using System.Threading.Tasks;
 
 namespace OnlineStore.Domain.Concrete
 {
-    public class EmailOrderProcessor
+    public class EmailOrderProcessor : IOrderProcessor
     {
-        public class EmailOrderProcessor : IOrderProcessor
-        {
+               
             private EmailSettings emailSettings;
 
             public EmailOrderProcessor(EmailSettings settings)
@@ -69,6 +68,6 @@ namespace OnlineStore.Domain.Concrete
                     smtpClient.Send(mailMessage);
                 }
             }
-        }
+    
     }
 }
