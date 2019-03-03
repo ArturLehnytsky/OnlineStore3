@@ -11,7 +11,12 @@
 </head>
 <body>
     <div class="navbar navbar-inverse" role="navigation">
-        <a class="navbar-brand" href="#">Online Store</a>
+        <a class="navbar-brand" href="#">
+            <span class="hidden-xs">Online Store</span>
+        </a>
+        <div class="vissible-xs">Online</div>
+        <div class="vissible-xs">Store</div>
+
         @Html.Action("Summary", "Cart")
     </div>
     <div class="row panel">
